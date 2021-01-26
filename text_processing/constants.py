@@ -1,0 +1,88 @@
+
+
+COMMA = u'\u060C'
+SEMICOLON = u'\u061B'
+QUESTION = u'\u061F'
+DOT = u'\u002E'
+TWODOTS = u'\u003A'
+EXCLAMATION = u'\u0021'
+
+
+ALEF = u'\u0627'
+BEH = u'\u0628'
+TEH_MARBUTA = u'\u0629'
+TEH = u'\u062a'
+THEH = u'\u062b'
+JEEM = u'\u062c'
+HAH = u'\u062d'
+KHAH = u'\u062e'
+DAL = u'\u062f'
+THAL = u'\u0630'
+REH = u'\u0631'
+ZAIN = u'\u0632'
+SEEN = u'\u0633'
+SHEEN = u'\u0634'
+SAD = u'\u0635'
+DAD = u'\u0636'
+TAH = u'\u0637'
+ZAH = u'\u0638'
+AIN = u'\u0639'
+GHAIN = u'\u063a'
+FEH = u'\u0641'
+QAF = u'\u0642'
+KAF = u'\u0643'
+LAM = u'\u0644'
+MEEM = u'\u0645'
+NOON = u'\u0646'
+HEH = u'\u0647'
+WAW = u'\u0648'
+ALEF_MAKSURA = u'\u0649'
+YEH = u'\u064a'
+
+
+TATWEEL = u'\u0640'
+
+MADDA_ABOVE = u'\u0653'
+HAMZA_ABOVE = u'\u0654'
+HAMZA_BELOW = u'\u0655'
+
+
+HAMZA = u'\u0621'
+ALEF_MADDA = u'\u0622'
+ALEF_HAMZA_ABOVE = u'\u0623'
+WAW_HAMZA = u'\u0624'
+ALEF_HAMZA_BELOW = u'\u0625'
+YEH_HAMZA = u'\u0626'
+
+FATHATAN = u'\u064b'
+DAMMATAN = u'\u064c'
+KASRATAN = u'\u064d'
+FATHA = u'\u064e'
+DAMMA = u'\u064f'
+KASRA = u'\u0650'
+SUKUN = u'\u0652'
+SHADDA = u'\u0651'
+
+LETTERS = (ALEF, BEH, TEH, TEH_MARBUTA, THEH, JEEM, HAH, KHAH,
+ DAL, THAL, REH, ZAIN, SEEN, SHEEN, SAD, DAD, TAH, ZAH,
+ AIN, GHAIN, FEH, QAF, KAF, LAM, MEEM, NOON, HEH, WAW, YEH,
+ HAMZA, ALEF_MADDA, ALEF_HAMZA_ABOVE, WAW_HAMZA, ALEF_HAMZA_BELOW,
+ YEH_HAMZA, ALEF_MAKSURA)
+
+HARAKAT = (FATHATAN, DAMMATAN, KASRATAN, FATHA, DAMMA, KASRA, SUKUN)
+
+
+TASHKEEL = HARAKAT + tuple(SHADDA + h for h in HARAKAT) + (SHADDA, )
+
+PUNCTUATION = (COMMA, SEMICOLON, QUESTION, DOT, TWODOTS, EXCLAMATION)
+
+HARAKAT_NAMES = {
+    FATHATAN : u'فتحتان',
+    DAMMATAN : u'ضمتان',
+    KASRATAN : u'كسرتان',
+    FATHA : u'فتحة',
+    DAMMA : u'ضمة',
+    KASRA : u'كسرة',
+    SHADDA : u'شدة',
+    SUKUN : u'سكون',
+}
